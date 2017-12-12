@@ -10,3 +10,7 @@
 .contact:hover {
   text-decoration: underline;
 }
+
+#addresses:hover {
+  background-color: #F0A78A;
+}
