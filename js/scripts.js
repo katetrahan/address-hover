@@ -18,6 +18,14 @@ Address.prototype.fullAddress = function() {
   return this.street + ", " + this.city + ", " + this.state;
 }
 
+function resetFields() { // resetting the form fields for the user outside of the 'submit' event listener & call the function in the submit event listener instead
+    $("input#new-first-name").val("");
+    $("input#new-last-name").val("");
+    $("input.new-street").val("");
+    $("input.new-city").val("");
+    $("input.new-state").val("");
+}
+
 //////////////////////////////////-------------------------// user interface logic
 $(document).ready(function() { //function for grouping the address
   $("#add-address").click(function() { //calling to the button
